@@ -1,0 +1,325 @@
+:root {
+  --ff-primary: "Croissant One", cursive;
+  --ff-secondary: "Unica One", cursive;
+  --ff-ordinary: "Montserrat Alternates", sans-serif;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  --fs-ordinary-1: 14px;
+  --fs-ordinary-2: 16px;
+  --fs-ordinary-3: 20px;
+
+  --fs-primary-1: 90px;
+  --fs-primary-2: 64px;
+  --fs-secondary-1: 42px;
+
+  --color-accent-100: hsl(0, 0%, 100%);
+  --color-accent-200: hsl(43, 43%, 46%);
+  --color-accent-300: hsl(148, 25%, 10%);
+
+  --size-screen: 1140px;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* utility classes  */
+
+.container {
+  max-width: var(--size-screen);
+  margin: 0 auto;
+}
+.primary-heading {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary-1);
+  font-weight: var(--fw-400);
+  text-transform: uppercase;
+  color: var(--color-accent-100);
+}
+.primary-heading-2 {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary-2);
+  font-weight: var(--fw-400);
+  color: var(--color-accent-100);
+  text-transform: uppercase;
+}
+.secondary-heading {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-secondary-1);
+  font-weight: var(--fw-400);
+  color: var(--color-accent-100);
+  text-transform: uppercase;
+}
+.ordinary-heading-1 {
+  font-family: var(--ff-ordinary);
+  font-size: var(--fs-ordinary-1);
+  color: var(--color-accent-100);
+  font-weight: var(--fw-300);
+}
+.ordinary-heading-2 {
+  font-family: var(--ff-ordinary);
+  font-size: var(--fs-ordinary-2);
+  font-weight: var(--fw-500);
+  color: var(--color-accent-100);
+  text-transform: uppercase;
+}
+.ordinary-heading-3 {
+  font-family: var(--ff-ordinary);
+  font-size: var(--fs-ordinary-3);
+  font-weight: var(--fw-600);
+  color: var(--color-accent-100);
+}
+.logo {
+  font-family: var(--ff-ordinary);
+  font-size: var(--fs-ordinary-3);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.flex-space-bt {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ______________ */
+body {
+  background: var(--color-accent-300);
+  color: var(--color-accent-100);
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient( rgba(0, 0, 0, 0.4), var(--color-accent-300)),
+  url("./images/bg-header.jpg") no-repeat bottom;
+
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+.navbar > ul {
+  gap : 4rem;
+}
+.header-icon {
+  gap: 2rem;
+}
+#hero {
+  height: 100%;
+}
+#hero > .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+/* main */
+main {
+  position: relative;
+}
+.main-title {
+  text-align: center;
+  box-shadow: 0px -50px 200px 40px var(--color-accent-300);
+  z-index: 10;
+}
+.main-title .primary-heading-2 {
+  max-width: 18ch;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-title .secondary-heading {
+  color: var(--color-accent-200)
+}
+.main-content {
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12rem;
+  margin-top: 10rem;
+}
+.main-content > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 5);
+  gap: 3rem;
+  position: relative;
+}
+.img {
+  border: 20px solid var(--color-accent-300);
+  transform: rotate(45deg);
+  overflow: hidden;
+}
+.img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg)
+  scale(1.7);
+}
+.left > .img {
+  margin-left: auto;
+}
+.right > .img {
+  margin-right: auto;
+}
+.img1 {
+  width: 150px;
+  height: 150px;
+}
+.img12 {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 8%;
+  left: -10%;
+  z-index: 2;
+}
+.img13 {
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  top: -15%;
+  left: -70%;
+}
+.img2 {
+  width: 170px;
+  height: 170px;
+}
+.img22 {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 45%;
+  right: -50%;
+  z-index: 2;
+}
+.img23 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 15%;
+  right: -110%;
+}
+
+.img3 {
+  width: 150px;
+  height: 150px;
+}
+.float-right {
+  position: absolute;
+  top: 3%;
+  left: -20%;
+}
+
+.mt {
+  margin-top: 3rem;
+  z-index: 100;
+}
+
+.line {
+  height: 75%;
+  width: 3px;
+  background: var(--color-accent-200);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  border-radius: 100%;
+}
+.line > div {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: var(--color-accent-200);
+  position: absolute;
+}
+.line > div {
+  left: -4px;
+}
+.line > div:first-child {
+  top: 20%;
+}
+.line > div:nth-child(2) {
+  top: 38%;
+}
+.line > div:nth-child(3) {
+  top: 48%;
+}
+.line > div:nth-child(4) {
+  top: 68%;
+}
+.line > div:last-child {
+  bottom: 10%;
+}
+.button {
+  margin-block: 5rem;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  background: none;
+  border: 2px solid var(--color-accent-200);
+  color: var(--color-accent-200);
+  font-family: var(--ff-ordinary);
+  font-size: var(--fs-ordinary-3);
+  font-weight: var(--fw-500);
+}
