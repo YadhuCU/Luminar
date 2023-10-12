@@ -76,7 +76,6 @@ svg {
 .container {
   max-width: var(--size-screen);
   margin: 0 auto;
-  border: 5px solid red;
 }
 .primary-heading {
   font-family: var(--ff-primary);
