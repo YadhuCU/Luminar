@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Restaurant</title>
+  </head>
+
+  <body>
+    <!-- header Section -->
+    <header id="home" class="[ bg-accent-300 neutral-100 pt-300 ]">
+      <nav class="nav [ flow ]">
+        <div class="nav__logo [ container flex-space-between ]">
+          <div data-type="small">
+            <button class="button">Call - 987 654 321</button>
+          </div>
+          <div>
+            <img src="./assets/Logo.svg" alt="" />
+          </div>
+          <div class="[ flex-space-between gap-200 ]" data-type="small">
+            <a href=""><img src="./assets/icon_cart.svg" alt="" /></a>
+            <button class="button">Reservation</button>
+          </div>
+        </div>
+        <div
+          class="nav__bar [ container flex py-100 ] [ border-top border-bottom ]"
+        >
+          <input type="checkbox" id="nav-icon" />
+          <label for="nav-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="2em"
+              viewBox="0 0 320 512"
+              class="nav__icon-open"
+            >
+              <path
+                d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"
+              />
+            </svg>
+          </label>
+          <ul role="list" class="nav__bar-list [ flex-align-center gap-250 ]">
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#home">Home</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#about">About</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#menu">Menu</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#reservation">Reservation</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#blog">Blog</a>
+            </li>
+            <li class="[ fs-20 fw-regular ][ underline ]">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__bar-social [ flex-align-center gap-150 ml-auto ]">
+            <a href=""><img src="./assets/icon_instagram.svg" alt="" /></a>
+            <a href=""><img src="./assets/icon_facebook.svg" alt="" /></a>
+            <a href=""><img src="./assets/icon_twiter.svg" alt="" /></a>
+            <a href=""><img src="./assets/icon_pinterest.svg" alt="" /></a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero [ container even-columns align-center gap-300 mt-300 ]">
+        <div class="hero__title [ flow pr-300 text-center-sm ]">
+          <h1 class="[ fs-65 fw-bold ]">Welcome to Restaurantate</h1>
+          <p>
+            Simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy .
+          </p>
+          <button class="button">View Menu</button>
+        </div>
+        <div class="hero__image">
+          <div class="hero__image-img">
+            <img src="./assets/hero_img.jpg" alt="" />
+          </div>
+          <img class="hero__image-pattern" src="./assets/pattern.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- header Section-end -->
+
+    <!-- about section -->
+    <section id="about" class="[ bg-neutral-100 accent-300 ]">
+      <div class="about [ container flow py-900 ]">
+        <div class="about__info [ flex-space-between flex-start gap-300 ]">
+          <div class="[ flex-align-center gap-100 ]">
+            <div class="svg">
+              <img src="./assets/icon_location.svg" alt="" />
+            </div>
+            <div>
+              <h5 class="[ fs-30 fw-bold ]">Locate Us</h5>
+              <p class="accent-300">Riverside 25, San Francisco, California</p>
+            </div>
+          </div>
+          <div class="[ flex-align-center gap-100 ]">
+            <div class="svg">
+              <img src="./assets/icon_clock.svg" alt="" />
+            </div>
+            <div>
+              <h5 class="[ fs-30 fw-bold ]">Open Hours</h5>
+              <p class="accent-300">Mon To Fri 9:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+          <div class="[ flex-align-center gap-100 ]">
+            <div class="svg">
+              <img src="./assets/icon_reservation.svg" alt="" />
+            </div>
+            <div>
+              <h5 class="[ fs-30 fw-bold ]">Reservation</h5>
+              <p class="accent-300">hirestaurantate@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__details [ even-columns gap-300 ]">
+          <div class="about__details-image">
+            <img src="./assets/hero_img2.jpg" alt="" />
+          </div>
+          <div
+            class="about__details-content [ flow text-center-sm pl-300 ][ border-left ]"
+            style="--spacer: 2rem"
+          >
+            <h4 class="[ fs-40 fw-bold ]">The Story</h4>
+            <p class="[ accent-300 max-width-60ch ]">
+              Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content gfshere',
+              makinlook like readable English. Many desktop publishing packages.
+            </p>
+            <div class="[ flex-space-between gap-300 ]">
+              <div>
+                <h4 class="[ fs-40 fw-bold ]">1994</h4>
+                <p class="accent-300">
+                  Lorem Ipsum is that it has a more-or-less normal distribution
+                </p>
+              </div>
+              <div>
+                <h4 class="[ fs-40 fw-bold ]">2021</h4>
+                <p class="accent-300">
+                  Lorem Ipsum is that it has a more-or-less normal distribution
+                </p>
+              </div>
+            </div>
+            <p class="[ fw-bold accent-300 ]">JOSEFINE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- menu section  -->
+    <section id="menu" class="menu">
+      <div class="[ container grid-col-3 gap-300 py-300 ]">
+        <div class="flow" style="--spacer: 3rem">
+          <div class="text-center-sm flow" style="--spacer: 1rem">
+            <p class="title">Menu</p>
+            <h4 class="accent-300 fs-40 fw-bold">Try Our Special Offers</h4>
+            <p class="accent-300">
+              Lorem Ipsum is that it has a more-or-less normal distribution of
+              letters, as opposed to using 'Content here, content making it look
+              like readable English.
+            </p>
+          </div>
+          <div>
+            <img src="./assets/menu_img1.png" alt="" />
+          </div>
+          <div>
+            <button class="[ button block-sm mx-auto-sm ]" data-type="lightbg">
+              See all dishes
+            </button>
+          </div>
+        </div>
+        <div class="menu__list flex-column gap-200">
+          <h4 class="fs-40 fw-bold mt-275-dt">Starters</h4>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img1.jpg" alt="" />
+            </div>
+            <div class="accent-300">
+              <h5 class="fs-30 fw-bold">Raw Scallops from Erquy</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="bar"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img2.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Raw Scallops from Erquy</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img3.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Raw Scallops from Erquy</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="bar"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img4.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Raw Scallops from Erquy</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="fs-40 fw-bold">Main Dish</h4>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img5.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Grilled Salmon with Dil Sauce</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img6.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Roast Beef with Vegetable</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img7.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Marrkesh Vegetetarian Curruy</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img8.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Spicy Vegan Potato Curry</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="fs-40 fw-bold">Dessert</h4>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img5.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Apple Pie with Cream</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__list-item">
+            <div class="menu__list-item-image">
+              <img src="./assets/menu_icon_img2.jpg" alt="" />
+            </div>
+            <div>
+              <h5 class="fs-30 fw-bold">Lemon Meringue Pie</h5>
+              <div class="menu__list-item-price">
+                <p class="accent-300">Candied Jerusalem artichokes, truffle</p>
+                <span class="[ bar ]"></span>
+                <p class="accent-300 ml-auto">$40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section end -->
+
+    <!-- offers section -->
+    <section class="offers">
+      <div class="[ container flow py-300 text-center justify-center ]">
+        <p class="title">Offer</p>
+        <h4 class="[ fs-40 fw-bold ]">Our special Offer dishes</h4>
+        <p class="[ accent-200 mx-auto ]">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content making.
+        </p>
+        <div class="[ even-columns gap-300 ]">
+          <div
+            class="[ offers__col ][ even-columns place-center py-300 pt-400 p-200 bg-neutral-500 ]"
+          >
+            <div class="grid place-center">
+              <div>
+                <p class="title" data-line="black">50% OFFER GOING</p>
+              </div>
+              <h4 class="[ fs-40 fw-bold ]">Chicken Burger</h4>
+              <p class="accent-200">
+                Lorem Ipsum is that it has a more-or-less normal
+              </p>
+            </div>
+            <div class="[ offers__col-img ]">
+              <img src="./assets/burger.png" alt="" />
+            </div>
+          </div>
+
+          <div
+            class="[ offers__col ][ even-columns place-center py-300 pt-400 p-200 bg-neutral-800 ]"
+          >
+            <div class="grid place-center">
+              <div>
+                <p class="title" data-line="black">50% OFFER GOING</p>
+              </div>
+              <h4 class="[ fs-40 fw-bold ]">Chicken Pizza</h4>
+              <p class="accent-200">
+                Lorem Ipsum is that it has a more-or-less normal
+              </p>
+            </div>
+            <div class="[ offers__col-img ]">
+              <img src="./assets/pizza.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offers section end -->
+
+    <!-- section popular-dishes  -->
+    <section id="gallery" class="popular-dishes">
+      <div class="[ container flow py-300 text-center justify-center ]">
+        <p class="title">Menu</p>
+        <h4 class="[ fs-40 fw-bold ]">Special Dishes</h4>
+        <p class="[ accent-200 mx-auto ]">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content making.
+        </p>
+        <div class="row flow-sm">
+          <div class="menu__card col-md-3 col-sm-12 [ ]">
+            <div>
+              <div>
+                <img class="" src="./assets/chicken_img.jpg" alt="" />
+              </div>
+              <div class="pt-200">
+                <div class="menu__detail-title [ space-between border-bottom ]">
+                  <h5 class="fs-30 fw-bold">Chicken Manjoori</h5>
+                  <h5 class="fs-30 fw-bold">$15</h5>
+                </div>
+                <p class="accent-200 text-start">
+                  Lorem Ipsum is that it has a more-or-less normal
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__card col-md-3 col-sm-12 [ ]">
+            <div>
+              <div>
+                <img class="" src="./assets/hotdog_img.jpg" alt="" />
+              </div>
+              <div class="pt-200">
+                <div class="menu__detail-title [ space-between border-bottom ]">
+                  <h5 class="fs-30 fw-bold">Chicken Hotdog</h5>
+                  <h5 class="fs-30 fw-bold">$15</h5>
+                </div>
+                <p class="accent-200 text-start">
+                  Lorem Ipsum is that it has a more-or-less normal
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__card col-md-3 col-sm-12 [ ]">
+            <div>
+              <div>
+                <img class="" src="./assets/mojito_img.jpg" alt="" />
+              </div>
+              <div class="pt-200">
+                <div class="menu__detail-title [ space-between border-bottom ]">
+                  <h5 class="fs-30 fw-bold">Bloom Mocktail</h5>
+                  <h5 class="fs-30 fw-bold">$15</h5>
+                </div>
+                <p class="accent-200 text-start">
+                  Lorem Ipsum is that it has a more-or-less normal
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="menu__card col-md-3 col-sm-12 [ ]">
+            <div>
+              <div>
+                <img class="" src="./assets/burger_img.jpg" alt="" />
+              </div>
+              <div class="pt-200">
+                <div class="menu__detail-title [ space-between border-bottom ]">
+                  <h5 class="fs-30 fw-bold">Chicken Burger</h5>
+                  <h5 class="fs-30 fw-bold">$15</h5>
+                </div>
+                <p class="accent-200 text-start">
+                  Lorem Ipsum is that it has a more-or-less normal
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="button display-block mx-auto" data-type="lightbg">
+        See all dishes
+      </button>
+    </section>
+    <!-- section popular-dishes end -->
+
+    <!-- section services  -->
+    <section class="service [ bg-accent-300 neutral-100 py-900 my-300 ]">
+      <div class="[ container flex-space-between flow-sm flex-wrap ]">
+        <div class="service__detail [ flex-column-sm align-center flow ]">
+          <div>
+            <p class="[ title ]" data-dbg>WHAT WE OFFER</p>
+          </div>
+          <h4 class="[ fs-40 fw-bold text-center-sm ]">Our Great Services</h4>
+          <p class="[ text-center-sm ]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            enim tenetur aperiam repellat distinctio, quos dolorum! Corrupti
+            eligendi natus nisi libero beatae, inventore facilis. Quas
+            repellendus eligendi neque vel et.
+          </p>
+        </div>
+        <div class="box-shadow">
+          <img class="mx-auto pb-100" src="./assets/Icon_calender.svg" alt="" />
+          <p>Opened 24/7</p>
+        </div>
+        <div class="box-shadow">
+          <img class="mx-auto pb-100" src="./assets/Icon_calender.svg" alt="" />
+          <p>Opened 24/7</p>
+        </div>
+        <div class="box-shadow">
+          <img class="mx-auto pb-100" src="./assets/Icon_calender.svg" alt="" />
+          <p>Opened 24/7</p>
+        </div>
+      </div>
+    </section>
+    <!-- section services end -->
+
+    <!-- section blog  -->
+    <section id="blog" class="blog">
+      <div class="[ container flow py-300 text-center justify-center ]">
+        <p class="title">Menu</p>
+        <h4 class="[ fs-40 fw-bold ]">Special Dishes</h4>
+        <p class="[ accent-200 mx-auto ]">
+          Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content making.
+        </p>
+        <div class="[ even-columns gap-300 ]">
+          <div class="[ blog__card ]">
+            <div>
+              <img src="./assets/news_img.png" alt="" />
+            </div>
+            <div
+              class="[ flow text-start p-200 ][ border-bottom border-left border-right ]"
+            >
+              <div class="[ flex gap-200 ]">
+                <p class="title">RESTAURANTS</p>
+                <p class="title">FEB 22, 2022</p>
+              </div>
+              <h4 class="[ fs-35 fw-bold ]">
+                The Most Popular Delicious Food Of Mediterranean Cuisine
+              </h4>
+              <p class="[ fs-15 fw-regular accent-200 ]">
+                Capitalize on low-hanging fruit to identify a ballpark value
+                added matrix economically and the creative activity to beta test
+                override the food quality.
+              </p>
+            </div>
+          </div>
+          <div class="[ blog__card ][ ]">
+            <div>
+              <img src="./assets/news_img2.png" alt="" />
+            </div>
+            <div
+              class="[ flow text-start p-200 ][ border-bottom border-left border-right ]"
+            >
+              <div class="[ flex gap-200 ]">
+                <p class="title">RESTAURANTS</p>
+                <p class="title">FEB 22, 2022</p>
+              </div>
+              <h4 class="[ fs-35 fw-bold ]">
+                The Most Popular Delicious Food Of Mediterranean Cuisine
+              </h4>
+              <p class="[ fs-15 fw-regular accent-200 ]">
+                Capitalize on low-hanging fruit to identify a ballpark value
+                added matrix economically and the creative activity to beta test
+                override the food quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section blog end -->
+    <footer>
+      <section id="reservation" class="form [ py-900 ]">
+        <form
+          class="[ form__card ][ container flow text-center bg-accent-350 neutral-100 py-500 ]"
+        >
+          <p class="title" data-dbg>RESERVATION</p>
+          <h4 class="[ fs-40 fw-bold ]">Book your table now</h4>
+          <div class="[ flex-wrap gap-100 ]">
+            <input class="[ flex-grow-1 ]" type="text" placeholder="Name" />
+            <input class="[ flex-grow-1 ]" type="email" placeholder="Email" />
+          </div>
+          <div class="[ flex-wrap gap-100 ]">
+            <input class="[ flex-grow-1 ]" type="text" placeholder="Person" />
+            <input class="[ flex-grow-1 ]" type="text" placeholder="Timing" />
+            <input class="[ flex-grow-1 ]" type="text" placeholder="Date" />
+          </div>
+          <button class="button" data-type="inverted">Book a Table</button>
+        </form>
+      </section>
+      <section
+        id="contact"
+        class="main-footer [ bg-accent-300 neutral-100 py-500 ]"
+      >
+        <div class="container text-center-sm">
+          <div class="nav__logo [ flex-space-between ]">
+            <div><button class="link">Instgram Feed</button></div>
+            <div class="nav__logo-image">
+              <img src="./assets/Logo.svg" alt="" />
+            </div>
+            <div class="nav__bar-social [ flex gap-200 ]">
+              <img src="./assets/icon_instagram.svg" alt="" />
+              <img src="./assets/icon_facebook.svg" alt="" />
+              <img src="./assets/icon_twiter.svg" alt="" />
+              <img src="./assets/icon_pinterest.svg" alt="" />
+            </div>
+          </div>
+          <div class="secondary__footer [ flex-space-between mt-300 ]">
+            <div class="[ secondary__footer-contact ][ flow ]">
+              <p class="title" data-dbg>CONTACT</p>
+              <p>5 Rule Dalou, 75015 Paris</p>
+              <p>Call - +33 153 78 38 29</p>
+              <p>abc@gmail.com</p>
+            </div>
+            <div
+              class="[ secondary__footer-form ][ flex-column align-center text-center gap-100 ]"
+            >
+              <p class="[ max-width-35ch ]">
+                Join our mailing lis for updates, Get news & offers events
+              </p>
+              <div class="[ flow-sm ]">
+                <input type="email" placeholder="Email" />
+                <button class="button" data-type="inverted">Subscribe</button>
+              </div>
+            </div>
+            <div class="[ secondary__footer-working ][ flow ]">
+              <p class="title" data-dbg>WORKING HOURS</p>
+              <p><span>Mon - Fri: </span>7.00am - 6.00pm</p>
+              <p><span>Sat: </span>7.00am - 6.00pm</p>
+              <p><span>Sun: </span>7.00am - 6.00pm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="copy__right [ bg-accent-300 py-300 ]">
+        <div
+          class="[ container flex-space-between text-center-sm py-100 ][ border-top border-bottom ]"
+        >
+          <p>
+            © Copyright
+            <span class="neutral-900">yadhukrishnacu003@gmail.com </span>|
+            Design by
+            <span class="neutral-900">VictoFlow</span>
+          </p>
+          <p>Figma Community / Design</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
